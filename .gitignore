@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/test-contracts
 
 # production
 /build
@@ -23,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 build.zip
+
+# Md reports
+ResilientDB_Balance_Bug_Report.md
+ResilientDB_Critical_Fixes_Report.md
+INTEGRATION_REPORT.md
