@@ -1,4 +1,3 @@
-#
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -28,7 +27,7 @@
     </a>
     <a href="https://github.com/ResilientApp/ResVault/actions"><img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/ResilientApp/ResVault/release.yml">
     </a>
-    <a href="https://github.com/ResilientApp/ResVault/commits/main"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/w/ResilientApp/ResVault">
+    <a href="https://github.com/ResilientApp/ResVault/commits/main"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/ResilientApp/ResVault">
     </a>
     <a href="https://github.com/ResilientApp/ResVault/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/ResilientApp/ResVault">
     </a>
@@ -41,20 +40,40 @@
 
 ## About
 
-ResVault is a chrome extension that serves as a wallet for [ResilientDB](https://resilientdb.com). ResilientDB is a High Throughput Yielding Permissioned Blockchain Fabric founded by [ExpoLab](https://expolab.org/) at [UC Davis](https://www.ucdavis.edu/) in 2018. ResilientDB advocates a system-centric design by adopting a multi-threaded architecture that encompasses deep pipelines. Further, ResilientDB separates the ordering of client transactions from their execution, which allows it to process messages out-of-order.
+ResVault is a Chrome extension that serves as a comprehensive wallet for [ResilientDB](https://resilientdb.com). ResilientDB is a High Throughput Yielding Permissioned Blockchain Fabric founded by [ExpoLab](https://expolab.org/) at [UC Davis](https://www.ucdavis.edu/) in 2018. ResilientDB advocates a system-centric design by adopting a multi-threaded architecture that encompasses deep pipelines. Further, ResilientDB separates the ordering of client transactions from their execution, which allows it to process messages out-of-order.
 
-- Create Account
-- Delete Account
-- Login
-- Submit Transactions
-- Transactions logging
-- User Profiles
-- Multi-account support
+## Features
 
-**Pending**:
+### Core Wallet Functionality
+- **Create Account** - Generate new wallet accounts with secure key management
+- **Delete Account** - Remove accounts with proper cleanup
+- **Login/Logout** - Secure authentication system
+- **Submit Transactions** - Send transactions to ResilientDB network
+- **Transaction Logging** - Complete transaction history and audit trail
+- **User Profiles** - Manage multiple user identities
+- **Multi-account Support** - Handle multiple wallet accounts simultaneously
+
+### Smart Contract Integration (v1.2.0)
+- **Contract Deployment** - Deploy Solidity smart contracts directly from the wallet
+- **Address Ownership** - Contracts are deployed using your wallet address for proper ownership
+- **GraphQL Integration** - Seamless communication with ResilientDB smart contract service
+- **Solidity Compilation** - Automatic compilation of Solidity contracts before deployment
+- **Enhanced Error Handling** - Improved debugging and error reporting for contract operations
+- **Network Flexibility** - Connect to mainnet or your local ResilientDB server
+
+### Security & Performance
+- **Secure Key Management** - Ed25519 key pairs with proper encryption
+- **Transaction Validation** - Built-in validation for all operations
+- **Network Connectivity** - Support for custom ResilientDB network endpoints
+- **Real-time Updates** - Live transaction status and balance updates
+
+**Pending Features**:
 - [ ] Password improvement
-- [ ] Transaction details
+- [ ] Transaction details view
 - [ ] View all transactions
+- [ ] Contract execution and interaction
+- [ ] Contract interaction history
+- [ ] Gas estimation and optimization
 
 ## Installation
 ### Via GitHub release
@@ -74,6 +93,18 @@ cd ResVault
 npm install
 npm run build
 ```
+
+## Smart Contract Usage
+
+### Deploying Contracts
+1. Navigate to the **Contract** tab in ResVault
+2. Enter your ResilientDB server URL:
+   - **Mainnet**: Use the production ResilientDB endpoint
+   - **Local Development**: Use your local server (e.g., `http://localhost:8400`)
+   - **Custom Server**: Use any ResilientDB instance (e.g., `http://your-server:8400`)
+3. Paste your Solidity contract code
+4. Provide constructor arguments if needed
+5. Click **Deploy** - the contract will be deployed using your wallet address
 
 ## Example Usage
 #### Demo Video
