@@ -81,8 +81,13 @@ Open [chrome://extensions/](chrome://extensions/) in Google Chrome, toggle Devel
 - Click on Load unpacked
 - Select the build folder that you downloaded from the GitHub releases.
 
-### Via Chrome Webstore
-Coming Soon
+### Via Chrome Web Store
+**🎉 Now Available on Chrome Web Store!**
+
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-green)](https://chromewebstore.google.com/detail/resvault/ejlihnefafcgfajaomeeogdhdhhajamf)
+
+**[Install ResVault from Chrome Web Store](https://chromewebstore.google.com/detail/resvault/ejlihnefafcgfajaomeeogdhdhhajamf)**
+
 
 ## Build
 **NodeJS is required.**  
@@ -90,7 +95,7 @@ Open `terminal` and execute:
 ```shell
 git clone https://github.com/ResilientApp/ResVault.git
 cd ResVault
-npm install
+npm install --legacy-peer-deps
 npm run build
 ```
 
@@ -113,6 +118,8 @@ Coming Soon
 ## Links
 
 - [Website](https://resilientdb.com)
+- [Chrome Web Store](https://chromewebstore.google.com/detail/resvault/ejlihnefafcgfajaomeeogdhdhhajamf) - Install ResVault
+- [GitHub Repository](https://github.com/ResilientApp/ResVault) - Source Code
 
 ## Contributing
 
