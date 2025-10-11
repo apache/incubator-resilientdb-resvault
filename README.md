@@ -95,7 +95,7 @@ Open `terminal` and execute:
 ```shell
 git clone https://github.com/ResilientApp/ResVault.git
 cd ResVault
-npm install --legacy-peer-deps
+npm install
 npm run build
 ```
 
