@@ -16,6 +16,13 @@
 # under the License.
 #
 
+**DEPRECATION NOTICE**
+
+This repository is deprecated.
+Active development now continues in the [ResilientDB Monorepo](https://github.com/apache/incubator-resilientdb).
+
+The ResVault can be found at [ecosystem/tools/resvault](https://github.com/apache/incubator-resilientdb/tree/master/ecosystem/tools/resvault).
+
 <div align="center">
   <br />
   <p>
